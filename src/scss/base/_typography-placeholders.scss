@@ -1,0 +1,123 @@
+///
+/// Basic styles for headings
+///
+%h1-heading {
+	font-size: rem(32);
+	line-height: 1.2;
+	font-weight: 600;
+
+	@include resp-from(md) {
+		font-size: rem(40);
+	}
+
+	@include resp-from(lg) {
+		font-size: rem(64);
+	}
+}
+
+%h2-heading {
+	font-size: rem(24);
+	line-height: 1.2;
+	font-weight: 600;
+
+	@include resp-from(lg) {
+		font-size: rem(34);
+	}
+}
+
+%h3-heading {
+	font-size: rem(20);
+	line-height: 1.2;
+	font-weight: 600;
+
+	@include resp-from(lg) {
+		font-size: rem(24);
+	}
+}
+
+%h4-heading {
+	font-size: rem(18);
+	line-height: 1.2;
+	font-weight: 600;
+
+	@include resp-from(lg) {
+		font-size: rem(20);
+	}
+}
+
+%h5-heading {
+	font-size: rem(16);
+	line-height: 1.2;
+	font-weight: 600;
+
+	@include resp-from(lg) {
+		font-size: rem(18);
+	}
+}
+
+%h6-heading {
+	font-size: rem(14);
+	line-height: 1.2;
+	font-weight: 600;
+
+	@include resp-from(lg) {
+		font-size: rem(16);
+	}
+}
+
+///
+/// Basic styles for links
+///
+%text-links {
+	color: currentColor;
+
+	@include on-event {
+		color: currentColor;
+	}
+
+	// &:focus-visible {
+	// 	outline: 2px solid $black;
+	// 	border-radius: 4px;
+	// 	transition: none;
+	// }
+}
+
+%text-links-solid {
+	position: relative;
+	color: currentColor;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 3px;
+	transition: all $transition-default;
+
+	@include on-hover {
+		text-decoration-color: currentColor;
+	}
+
+	@include on-active {
+		color: currentColor;
+		transition: all $transition-default;
+	}
+
+	// &:focus-visible {
+	// 	outline: 2px solid $black;
+	// 	border-radius: 3px;
+	// 	transition: none;
+	// }
+}
+
+%text-links-dashed {
+	@extend %text-links-solid;
+	text-decoration-style: dashed;
+}
+
+%link-classic {
+	text-decoration: underline;
+	text-decoration-color: $black30;
+	text-underline-offset: 1px;
+	transition: all 0.15s ease;
+
+	@include on-hover {
+		text-decoration-color: $black60;
+	}
+}

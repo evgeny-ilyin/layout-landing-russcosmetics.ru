@@ -1,0 +1,35 @@
+.cookie {
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 8px;
+	background: gray;
+	z-index: 1;
+
+	// .cookie__description
+	&__description {
+		padding: 10px 16px;
+	}
+
+	// .cookie__buttons
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+		justify-content: space-between;
+		flex-grow: 1;
+		padding: 10px 16px;
+	}
+
+	// .cookie__accept
+	&__accept {
+	}
+
+	// .cookie__more
+	&__more {
+	}
+}

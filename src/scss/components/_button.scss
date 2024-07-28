@@ -1,0 +1,7 @@
+.btn {
+	// .btn_default
+	&_default {
+		@include on-event {
+		}
+	}
+}

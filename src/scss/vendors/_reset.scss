@@ -1,0 +1,87 @@
+/*! reset.css | github.com/PsychoPuss/modern-css-reset */
+/* Outline rules */
+:active,
+:focus,
+:focus-visible,
+a:active,
+a:focus,
+a:focus-visible {
+	outline: 0
+}
+
+/* Remove default padding on ul, ol elements with a class attribute */
+ol[class],
+ul[class] {
+	padding: 0
+}
+
+/* Remove default margin */
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol[class],
+p,
+ul[class] {
+	margin: 0
+}
+
+/* Set core root defaults */
+html {
+	scroll-behavior: smooth
+}
+
+/* Set core body defaults */
+body {
+	text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ol[class],
+ul[class] {
+	list-style: none
+}
+
+/* A elements that don't have a class get default styles */
+a {
+	text-decoration-skip-ink: auto
+}
+
+/* Make images easier to work with */
+img {
+	font-style: italic;
+	max-width: 100%;
+	height: auto;
+	display: block
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+	margin-top: 1em
+}
+
+button {
+	cursor: pointer
+}
+
+/* Blur images when they have no alt attribute */
+// img:not([alt]) {
+// 	filter: blur(10px)
+// }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion:reduce) {
+	* {
+		animation-duration: 0s !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0s !important;
+		scroll-behavior: auto !important
+	}
+}

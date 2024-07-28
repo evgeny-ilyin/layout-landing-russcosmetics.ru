@@ -1,0 +1,11 @@
+@import "abstracts/root-vars-map";
+
+:root {
+	@each $name, $color in $colors {
+		--#{$name}: #{$color};
+	}
+
+	@each $name, $svg in $svgs {
+		--#{$name}: #{$svg};
+	}
+}

@@ -1,0 +1,136 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@use "sass:selector";
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}
+
+@mixin on-hover() {
+	&:hover {
+		@content;
+	}
+}
+
+@mixin on-active() {
+	&:active {
+		@content;
+	}
+}
+
+@mixin on-focus() {
+	&:focus {
+		@content;
+	}
+}
+
+@mixin on-focus-visible() {
+	&:focus-visible {
+		@content;
+	}
+}
+
+@mixin on-disabled() {
+	&:disabled {
+		@content;
+	}
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+	#{$context} & {
+		@content;
+	}
+}
+
+/// And one more
+/// https://sass-lang.com/documentation/at-rules/at-root
+@mixin unify-parent($child) {
+	@at-root #{selector.unify(&, $child)} {
+		@content;
+	}
+}
+
+@mixin link-border($color) {
+	// padding: 1px 0;
+	color: $color;
+	white-space: nowrap;
+	background: linear-gradient($color, $color) 0 100% no-repeat;
+	background-size: 0 1px;
+	transition: background-size 0.4s;
+	@include on-event {
+		color: $color;
+		text-decoration: none;
+		background-size: 100% 1px;
+		border: 0;
+	}
+}
+
+/// Media queries
+@mixin resp-from($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	} @else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+		+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+@mixin resp-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (max-width: #{map-get($breakpoints, $breakpoint) - 1}) {
+			@content;
+		}
+	} @else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+		+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+@mixin media-range($from, $to) {
+	@media (min-width: #{map-get($breakpoints, $from)}) and (max-width: #{map-get($breakpoints, $to) - 1}) {
+		@content;
+	}
+}
+
+//** MORE
+/// Simple arrows, angles and checkmark: https://codepen.io/andgatjens/pen/PmLqaN
+
+//** Deprecated
+// @mixin respond-to($breakpoint, $type: false) {
+// 	@if map-has-key($breakpoints, $breakpoint) {
+// 		@if ($type == "max") {
+// 			@media (max-width: #{map-get($breakpoints, $breakpoint) - 1}) {
+// 				@content;
+// 			}
+// 		} @else {
+// 			@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+// 				@content;
+// 			}
+// 		}
+// 	} @else {
+// 		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Please make sure it is defined in `$breakpoints` map.";
+// 	}
+// }

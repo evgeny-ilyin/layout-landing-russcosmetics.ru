@@ -1,0 +1,14 @@
+import * as fn from "./modules/functions.js";
+// import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
+
+addEventListener("DOMContentLoaded", () => {
+	// useDynamicAdapt();
+
+	fn.isTouchDevice();
+
+	// fn.isWebp();
+	// fn.stickyHeader();
+	// fn.closeMenuHandler();
+});
+
+// import "./modules/cookies.js";

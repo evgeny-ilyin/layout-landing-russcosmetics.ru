@@ -1,0 +1,10 @@
+<footer class="footer">
+	<div class="content">
+		@@if(!context.year_from) {
+			Footer
+		}
+		@@if(context.year_from && context.year_to) {
+			<div>@@year_from — @@year_to</div>
+		}
+	</div>
+</footer>

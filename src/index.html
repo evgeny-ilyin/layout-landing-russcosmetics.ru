@@ -1,0 +1,24 @@
+@@include('html/components/head.html', {
+"title": "Главная"
+})
+<body>
+	@@include('html/layout/header.html', {})
+
+	<main class="container flex-1">
+		<div class="content">
+			<br><br><br><br><br>
+			Content
+			<br><br><br><br><br>
+		</div>
+	</main>
+
+	@@include('html/layout/footer.html', {
+		"year_from": 2020,
+		"year_to": 2023,
+	})
+
+	@@include('html/components/cookies.html', {})
+	@@include('html/components/svg-sprite.html', {})
+	@@include('html/components/scripts.html', {})
+</body>
+</html>

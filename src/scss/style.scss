@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/root-vars-map";
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// 2. Vendors
+@import "vendors/normalize";
+@import "vendors/reset";
+
+// 3. Base stuff
+@import "base/base";
+@import "base/fonts";
+@import "base/grid";
+@import "base/typography-placeholders";
+@import "base/typography";
+@import "base/helpers";
+@import "base/color-schemes";
+
+// 4. Layout-related sections
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+// 5. Components
+@import "components/button";
+@import "components/form";
+@import "components/checkbox";
+@import "components/cookies";
+@import "components/svg-sprite";
+
+// 6. Page-specific styles
+@import "pages/home";
+
+// 7. Themes
+@import "themes/default";
