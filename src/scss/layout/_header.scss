@@ -17,6 +17,12 @@
 	&__logo {
 		a {
 			display: flex;
+			width: 70%;
+			margin: 0 auto;
+
+			@include resp-from(md) {
+				width: auto;
+			}
 		}
 	}
 
