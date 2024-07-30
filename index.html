@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap&v=20240730150604" rel="stylesheet">
-	<link rel="stylesheet" href="css/root-vars.css?v=20240730150604">
-	<link rel="stylesheet" href="css/style.css?v=20240730150604">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap&v=20240731024232" rel="stylesheet">
+	<link rel="stylesheet" href="css/root-vars.css?v=20240731024232">
+	<link rel="stylesheet" href="css/style.css?v=20240731024232">
 	<title>Главная</title>
 </head>
 
@@ -31,9 +31,15 @@
 	<main class="container flex-1">
 		<div class="content content_wide bg-gray">
 			<div class="banner-main">
-				<picture>
-					<img src="img/banner-main-1920.jpg" width="1920" height="551" alt="">
-				</picture>
+				<div class="banner-main__text">
+					<div class="banner-main__header">Fermented <br>biosaccharide</div>
+					<div class="banner-main__descr">Серия для придания объёма волосам Fermented&nbsp;volume</div>
+				</div>
+				<div class="banner-main__bgr">
+					<picture>
+						<img src="img/banner-main-1920.jpg" width="1920" height="551" alt="">
+					</picture>
+				</div>
 			</div>
 		</div>
 		<div class="content">
@@ -132,8 +138,61 @@
 							</div>
 						</div>
 					</div>
-					<div class="block-2__swiper">
-
+					<div class="block-2__carousel">
+						<div class="f-carousel" id="carouselBlock2">
+							<div class="f-carousel__slide">
+								<div class="slide slide-1">
+									<div class="slide__header">BIOLOGICA в цифрах</div>
+									<div class="slide__body _complex">
+										<picture>
+											<source srcset="img/decor-grass.webp" type="image/webp"><img src="img/decor-grass.png" class="slide-1-decor-grass" width="166" height="519" alt="">
+										</picture>
+										<img src="img/slide-1.svg" class="slide-1-svg" width="331" height="392" alt="">
+									</div>
+									<div class="slide__footer">
+										<div class="slide__descr">
+											<picture>
+												<source srcset="img/icon-qr.webp" type="image/webp"><img src="img/icon-qr.png" width="44" height="44" alt="">
+											</picture>
+											<div>Разработаны в 2015 году Генеральной ассамблеей ООН</div>
+										</div>
+										<div class="slide__note">*Тестирование проводилось на сотрудниках компании ООО «Русская Косметика», в&nbsp;тестировании принимали участие 27 человек.</div>
+									</div>
+								</div>
+							</div>
+							<div class="f-carousel__slide">
+								<div class="slide">
+									<div class="slide__header">Эффективность комплекса <br>«Fermented biosaccharide»</div>
+									<div class="slide__body">
+										<picture>
+											<source srcset="img/slide-2.webp" type="image/webp"><img src="img/slide-2.jpg" width="850" height="850" alt="">
+										</picture>
+									</div>
+									<div class="slide__footer">
+										<div class="slide__descr">
+											<div>Кожа ДО тестирования комплексного ухода</div>
+										</div>
+										<div class="slide__note">*Тестирование проводилось на сотрудниках компании ООО «Русская Косметика», в&nbsp;тестировании принимали участие 27 человек.</div>
+									</div>
+								</div>
+							</div>
+							<div class="f-carousel__slide">
+								<div class="slide">
+									<div class="slide__header">Эффективность комплекса <br>«Fermented biosaccharide»</div>
+									<div class="slide__body">
+										<picture>
+											<source srcset="img/slide-3.webp" type="image/webp"><img src="img/slide-3.jpg" width="850" height="850" alt="">
+										</picture>
+									</div>
+									<div class="slide__footer">
+										<div class="slide__descr">
+											<div>Кожа ПОСЛЕ тестирования комплексного ухода</div>
+										</div>
+										<div class="slide__note">*Тестирование проводилось на сотрудниках компании ООО «Русская Косметика», в&nbsp;тестировании принимали участие 27 человек.</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="cards">
@@ -502,7 +561,7 @@
 					<div class="cards__h">Уход для тела</div>
 
 					<div class="cards__wrapper">
-						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-2-01" aria-label="для объёма волос">
+						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-2-01" aria-label="для увлажнения кожи">
 							<div class="card__image">
 								<picture>
 									<source srcset="img/card-2-01.webp" type="image/webp"><img src="img/card-2-01.png" width="382" height="382" alt="" loading="lazy">
@@ -525,7 +584,7 @@
 						</a>
 						<div class="dynamic-adapt card-2-01"></div>
 
-						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-2-02" aria-label="для восстановления волос">
+						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-2-02" aria-label="для питания кожи">
 							<div class="card__image">
 								<picture>
 									<source srcset="img/card-2-02.webp" type="image/webp"><img src="img/card-2-02.png" width="382" height="382" alt="" loading="lazy">
@@ -548,7 +607,7 @@
 						</a>
 						<div class="dynamic-adapt card-2-02"></div>
 
-						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-2-03" aria-label="для укрепления волос">
+						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-2-03" aria-label="для тонизирования кожи">
 							<div class="card__image">
 								<picture>
 									<source srcset="img/card-2-03.webp" type="image/webp"><img src="img/card-2-03.png" width="382" height="382" alt="" loading="lazy">
@@ -585,7 +644,7 @@
 								</div>
 								<div class="card-data__descr">
 									<div class="card-data__header">Fermented <br>hydration</div>
-									<div class="card-data__body">Серия для для увлажнения кожи</div>
+									<div class="card-data__body">Серия для увлажнения кожи</div>
 									<div class="card-data__note">
 										<div>Питают и обновляют кожу, защищают от воздействия свободных радикалов</div>
 										<div>Придают коже нежность, мягкость и увлажнение, делают ее более упругой и подтянутой</div>
@@ -630,11 +689,386 @@
 								</div>
 							</div>
 						</div>
+						<div class="card-data" data-id="card-2-02" data-da=".dynamic-adapt.card-2-02,767">
+							<div class="card-data__top">
+								<div class="card-data__images">
+									<picture>
+										<source srcset="img/card-2/02-1.webp" type="image/webp"><img src="img/card-2/02-1.png" class="js-card-item" width="133" height="366" alt="" data-target="card-2-02-1">
+									</picture>
+									<picture>
+										<source srcset="img/card-2/02-2.webp" type="image/webp"><img src="img/card-2/02-2.png" class="js-card-item" width="133" height="340" alt="" data-target="card-2-02-2">
+									</picture>
+								</div>
+								<div class="card-data__descr">
+									<div class="card-data__header">Fermented <br>nutrition</div>
+									<div class="card-data__body">Серия для питания кожи</div>
+									<div class="card-data__note">
+										<div>Смягчают и успокаивают кожу, увлажняют, предупреждая появление сухости и шелушений</div>
+										<div>Питают кожу и способствуют выработки эластина и коллагена</div>
+										<div>Успокаивают кожу и предотвращают её пересушивание.</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-data__bottom">
+								<div class="card-data__common">
+									<div>Гель с маслом для душа питательный Fermented nutrition, 500 мл</div>
+									<div>Лосьон для тела питательный Fermented nutrition, 300 мл</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-2-02-1">
+									<div class="item__header">Гель с маслом для душа питательный Fermented nutrition, 500 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Повышает эффективность полезных ингредиентов, входящих в состав, способствуя более глубокому проникновению в кожу. Восстанавливает микробиом (иммунитет) кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Д-пантенол</div>
+										<div class="item__body">Интенсивно питает и восстанавливает кожу</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Масло авокадо</div>
+										<div class="item__body">Питает кожу и способствует выработке эластина и коллагена</div>
+									</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-2-02-2">
+									<div class="item__header">Лосьон для тела питательный Fermented nutrition, 300 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Повышает эффективность полезных ингредиентов, входящих в состав, способствуя более глубокому проникновению в кожу. Восстанавливает микробиом (иммунитет) кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Д-пантенол</div>
+										<div class="item__body">Интенсивно питает и восстанавливает кожу</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Масло авокадо</div>
+										<div class="item__body">Питает кожу и способствует выработке эластина и коллагена</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-data" data-id="card-2-03" data-da=".dynamic-adapt.card-2-03,767">
+							<div class="card-data__top">
+								<div class="card-data__images">
+									<picture>
+										<source srcset="img/card-2/03-1.webp" type="image/webp"><img src="img/card-2/03-1.png" class="js-card-item" width="133" height="366" alt="" data-target="card-2-03-1">
+									</picture>
+									<picture>
+										<source srcset="img/card-2/03-2.webp" type="image/webp"><img src="img/card-2/03-2.png" class="js-card-item" width="133" height="340" alt="" data-target="card-2-03-2">
+									</picture>
+								</div>
+								<div class="card-data__descr">
+									<div class="card-data__header">Fermented <br>toning</div>
+									<div class="card-data__body">Серия для тонизирования кожи</div>
+									<div class="card-data__note">
+										<div>Повышают упругость и эластичность кожи, улучшают тонус кожи</div>
+										<div>Тонизируют кожу, питают смягчают, делают бархатистой</div>
+										<div>Восстанавливают кожу после негативного воздействия окружающей среды</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-data__bottom">
+								<div class="card-data__common">
+									<div>Гель с маслом для душа тонизирующий Fermented toning, 500 мл</div>
+									<div>Лосьон для тела тонизирующий Fermented toning, 300 мл</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-2-03-1">
+									<div class="item__header">Гель с маслом для душа тонизирующий Fermented toning, 500 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Укрепляет естественную защиту кожи, ускоряет химические реакции, протекающие в тканях. Восстанавливает микробиом (иммунитет) кожи.</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Д-пантенол</div>
+										<div class="item__body">Интенсивно питает и восстанавливает кожу</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Масло миндаля</div>
+										<div class="item__body">Тонизирует кожу, питает, смягчает, делает бархатистой, восстанавливает после негативного воздействия окружающей среды</div>
+									</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-2-03-2">
+									<div class="item__header">Лосьон для тела тонизирующий Fermented toning, 300 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Укрепляет естественную защиту кожи, ускоряет химические реакции, протекающие в тканях. Восстанавливает микробиом (иммунитет) кожи.</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Д-пантенол</div>
+										<div class="item__body">Интенсивно питает и восстанавливает кожу</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Масло миндаля</div>
+										<div class="item__body">Тонизирует кожу, питает, смягчает, делает бархатистой, восстанавливает после негативного воздействия окружающей среды</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
+
+					<div class="cards__h">Уход для лица</div>
+
+					<div class="cards__wrapper">
+						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-3-01" aria-label="для чувствительной кожи">
+							<div class="card__image">
+								<picture>
+									<source srcset="img/card-3-01.webp" type="image/webp"><img src="img/card-3-01.png" width="382" height="382" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="card__title">для чувствительной кожи</div>
+							<div class="card__desc">
+								<div class="card__num">01</div>
+								<div class="card__more">
+									<div class="card__btn">
+										<span>
+											<svg width="24" height="24">
+												<use xlink:href="#icon-arrow"></use>
+											</svg>
+										</span>
+										Подробнее
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="dynamic-adapt card-3-01"></div>
+
+						<a href="javascript:void(0)" class="card js-accordion-trigger" data-target="card-3-02" aria-label="для увлажнения и питания губ">
+							<div class="card__image">
+								<picture>
+									<source srcset="img/card-3-02.webp" type="image/webp"><img src="img/card-3-02.png" width="382" height="382" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="card__title">для увлажнения и&nbsp;питания&nbsp;губ</div>
+							<div class="card__desc">
+								<div class="card__num">02</div>
+								<div class="card__more">
+									<div class="card__btn">
+										<span>
+											<svg width="24" height="24">
+												<use xlink:href="#icon-arrow"></use>
+											</svg>
+										</span>
+										Подробнее
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="dynamic-adapt card-3-02"></div>
+
+						<a href="https://www.youtube.com/watch?v=ETOXFqB-o6I" data-fancybox class="card card_bgr" aria-label="видео">
+							<svg>
+								<use xlink:href="#icon-play2"></use>
+							</svg>
+							<picture>
+								<source srcset="img/card-3-03.webp" type="image/webp"><img src="img/card-3-03.jpg" width="525" height="720" alt="" loading="lazy">
+							</picture>
+						</a>
+					</div>
+
+					<div class="cards__content">
+						<div class="card-data" data-id="card-3-01" data-da=".dynamic-adapt.card-3-01,767">
+							<div class="card-data__top">
+								<div class="card-data__images">
+									<picture>
+										<source srcset="img/card-3/01-1.webp" type="image/webp"><img src="img/card-3/01-1.png" class="js-card-item" width="130" height="375" alt="" data-target="card-3-01-1">
+									</picture>
+									<picture>
+										<source srcset="img/card-3/01-2.webp" type="image/webp"><img src="img/card-3/01-2.png" class="js-card-item" width="105" height="333" alt="" data-target="card-3-01-2">
+									</picture>
+									<picture>
+										<source srcset="img/card-3/01-3.webp" type="image/webp"><img src="img/card-3/01-3.png" class="js-card-item" width="130" height="375" alt="" data-target="card-3-01-3">
+									</picture>
+								</div>
+								<div class="card-data__descr">
+									<div class="card-data__header">Fermented <br>cleansing</div>
+									<div class="card-data__body">Серия для глубокого очищения чувствительной кожи</div>
+									<div class="card-data__note">
+										<div>Бережно и эффективно очищают чувствительную кожу лица</div>
+										<div>Обладают антибактериальным и заживляющим действием</div>
+										<div>Улучшают общий вид кожи, смягчают и выравнивают тон</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-data__bottom">
+								<div class="card-data__common">
+									<div>Тоник для чувствительной кожи лица Fermented cleansing, 300 мл</div>
+									<div>Пенка для умывания для чувствительной кожи лица Fermented cleansing, 150 мл</div>
+									<div>Мицеллярная вода для чувствительной кожи лица Fermented cleansing, 300 мл</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-3-01-1">
+									<div class="item__header">Тоник для чувствительной кожи лица Fermented cleansing, 300 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Нормализует микробиом (иммунитет) кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Ниацинамид</div>
+										<div class="item__body">Улучшает общий вид кожи, способствует снятию воспалений, смягчает и выравнивает тон кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Центелла</div>
+										<div class="item__body">Содержит компоненты, которые обладают антибактериальным и заживляющим действием</div>
+									</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-3-01-2">
+									<div class="item__header">Пенка для умывания для чувствительной кожи лица Fermented cleansing, 150 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Нормализует микробиом (иммунитет) кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Ниацинамид</div>
+										<div class="item__body">Улучшает общий вид кожи, способствует снятию воспалений, смягчает и выравнивает тон кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Центелла</div>
+										<div class="item__body">Содержит компоненты, которые обладают антибактериальным и заживляющим действием</div>
+									</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-3-01-3">
+									<div class="item__header">Мицеллярная вода для чувствительной кожи лица Fermented cleansing, 300 мл</div>
+									<div class="item__row">
+										<div class="item__title">Ферментированный комплекс</div>
+										<div class="item__body">Нормализует микробиом (иммунитет) кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Ниацинамид</div>
+										<div class="item__body">Улучшает общий вид кожи, способствует снятию воспалений, смягчает и выравнивает тон кожи</div>
+									</div>
+									<div class="item__row">
+										<div class="item__title">Центелла</div>
+										<div class="item__body">Содержит компоненты, которые обладают антибактериальным и заживляющим действием</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-data" data-id="card-3-02" data-da=".dynamic-adapt.card-3-02,767">
+							<div class="card-data__top">
+								<div class="card-data__images">
+									<picture>
+										<source srcset="img/card-3/02-1.webp" type="image/webp"><img src="img/card-3/02-1.png" class="js-card-item" width="180" height="354" alt="" data-target="card-3-02-1">
+									</picture>
+									<picture>
+										<source srcset="img/card-3/02-2.webp" type="image/webp"><img src="img/card-3/02-2.png" class="js-card-item" width="180" height="354" alt="" data-target="card-3-02-2">
+									</picture>
+									<picture>
+										<source srcset="img/card-3/02-3.webp" type="image/webp"><img src="img/card-3/02-3.png" class="js-card-item" width="180" height="354" alt="" data-target="card-3-02-3">
+									</picture>
+								</div>
+								<div class="card-data__descr">
+									<div class="card-data__header"></div>
+									<div class="card-data__body">Серия для увлажнения и питания губ</div>
+									<div class="card-data__note _vertical">
+										<div>Увлажнение 24 часа</div>
+										<div>Устраняют шелушения</div>
+										<div>Разглаживают и питают</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-data__bottom">
+								<div class="card-data__common">
+									<div>Бальзам для губ RASPBERRY PARFAIT, 3,6 г</div>
+									<div>Бальзам для губ STRAWBERRY MARMALADE, 3,6 г</div>
+									<div>Бальзам для губ PEACH MALLOW, 3,6 г</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-3-02-1">
+									<div class="item__header">Бальзам для губ RASPBERRY PARFAIT, 3,6 г</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-3-02-2">
+									<div class="item__header">Бальзам для губ STRAWBERRY MARMALADE, 3,6 г</div>
+								</div>
+								<div class="card-data__item item hidden" data-id="card-3-02-3">
+									<div class="item__header">Бальзам для губ PEACH MALLOW, 3,6 г</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+				<div class="block-3">
+					<div class="block-3__banner">
+						<picture>
+							<source srcset="img/banner-middle-1920.webp" type="image/webp"><img src="img/banner-middle-1920.jpg" width="1600" height="699" alt="">
+						</picture>
 
+					</div>
+
+					<div class="block-3__eco">
+						<div class="block-3__eco-header">Продукция <b class="text-green">ТМ&nbsp;BioLogica</b> соответствует этическим стандартам и имеет сертификат Vegan и Эко-сертификат</div>
+						<div class="block-3__eco-logos">
+							<picture>
+								<source srcset="img/icon-eco-green.webp" type="image/webp"><img src="img/icon-eco-green.png" width="196" height="196" alt="">
+							</picture>
+							<picture>
+								<source srcset="img/icon-vegan-green.webp" type="image/webp"><img src="img/icon-vegan-green.png" width="196" height="196" alt="">
+							</picture>
+							<picture>
+								<source srcset="img/icon-ferment-green.webp" type="image/webp"><img src="img/icon-ferment-green.png" width="196" height="196" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="block-3__certs">
+						<div class="block-3__cert-item">
+							<picture>
+								<source srcset="img/cert-1.webp" type="image/webp"><img src="img/cert-1.jpg" width="705" height="942" alt="">
+							</picture>
+						</div>
+						<div class="block-3__cert-item">
+							<picture>
+								<source srcset="img/cert-2.webp" type="image/webp"><img src="img/cert-2.jpg" width="681" height="942" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="block-3__buy">
+						<div class="block-3__buy-header">Где купить?</div>
+
+						<div class="f-carousel" id="carouselBuy">
+							<div class="f-carousel__slide">
+								<picture>
+									<source srcset="img/buy-megamarket.webp" type="image/webp"><img src="img/buy-megamarket.png" width="250" height="33" alt="">
+								</picture>
+							</div>
+							<div class="f-carousel__slide">
+								<picture>
+									<source srcset="img/buy-yamarket.webp" type="image/webp"><img src="img/buy-yamarket.png" width="250" height="37" alt="">
+								</picture>
+							</div>
+							<div class="f-carousel__slide">
+								<svg width="250" height="25">
+									<use xlink:href="#buy-wb"></use>
+								</svg>
+							</div>
+							<div class="f-carousel__slide">
+								<svg width="250" height="41">
+									<use xlink:href="#buy-ozon"></use>
+								</svg>
+							</div>
+
+							<div class="f-carousel__slide">
+								<picture>
+									<source srcset="img/buy-megamarket.webp" type="image/webp"><img src="img/buy-megamarket.png" width="250" height="33" alt="">
+								</picture>
+							</div>
+							<div class="f-carousel__slide">
+								<picture>
+									<source srcset="img/buy-yamarket.webp" type="image/webp"><img src="img/buy-yamarket.png" width="250" height="37" alt="">
+								</picture>
+							</div>
+							<div class="f-carousel__slide">
+								<svg width="250" height="25">
+									<use xlink:href="#buy-wb"></use>
+								</svg>
+							</div>
+							<div class="f-carousel__slide">
+								<svg width="250" height="41">
+									<use xlink:href="#buy-ozon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -675,14 +1109,49 @@
 		<symbol fill="none" viewBox="0 0 56 47" id="icon-eco" xmlns="http://www.w3.org/2000/svg">
 			<path fill="#fff" fill-rule="evenodd" d="M41.753 20.24s.128 14.585-5.783 19.79c-5.471 4.835-11.301 2.464-14.806-.254-1.631 1.55-2.741 2.614-2.741 2.614l-5.934.29s2.88-1.574 7.056-4.35c-3.077-3.1-5.645-8.212-.22-13.001 5.91-5.229 22.428-5.09 22.428-5.09ZM28.474.806c-.694 0-1.422.196-1.99.636L1.917 20.563c-1.029.81-1.307 2.117-.647 3.193.705 1.133 2.348 2.463 4.696 2.463.52 0 1.018-.034 1.527-.162v16.98c0 .44.104 1.609 1.122 2.557.728.671 1.746 1.018 2.857 1.018h12.192l8.258-.035h11.903c1.191 0 2.29-.404 3.077-1.122a3.632 3.632 0 0 0 1.156-2.706V25.838c.671.185 1.307.289 1.955.289 2.476 0 4.164-1.354 4.847-2.499.613-1.052.335-2.325-.648-3.134L30.43 1.477c-.555-.44-1.249-.659-1.955-.67Z" clip-rule="evenodd" />
 		</symbol>
-		<symbol fill="none" viewBox="0 0 19 22" id="icon-note" xmlns="http://www.w3.org/2000/svg">
-			<path d="M13.126 3.144a2.667 2.667 0 1 1 5.334 0 2.667 2.667 0 0 1-5.334 0ZM.793 20.644h6v1h-6v-1Zm14.5-8.5v-9h1v9h-1Zm-8.5 8.5a8.5 8.5 0 0 0 8.5-8.5h1a9.5 9.5 0 0 1-9.5 9.5v-1Z" fill="#262626" />
-		</symbol>
 		<symbol fill="none" viewBox="0 0 52 51" id="icon-person" xmlns="http://www.w3.org/2000/svg">
 			<path fill="#fff" fill-rule="evenodd" d="M38.866 27.151c-.854 0-1.708.854-1.708 1.708s.854 1.693 1.708 1.693c5.124 0 9.378 4.24 9.378 9.76v.426c-.427.854 0 1.693.854 2.12h.427c.854 0 1.281-.427 1.281-.839.427-.427.427-1.28.427-1.708 0-7.212-5.123-13.16-12.367-13.16ZM24.792 4.66c1.28-.427 2.561-.84 3.842-.84 4.682 0 8.524 5.094 8.524 11.026 0 1.28 0 2.12-.427 3.4 0 .854.427 1.693 1.281 1.693h.427c.854 0 1.281-.427 1.281-1.266.427-1.28.427-2.546.427-3.827C40.147 7.206 35.024.42 28.634.42c-1.707 0-3.842.854-5.123 1.693-.854.427-1.281 1.28-.854 2.12.427.854 1.708.854 2.135.427Zm8.95 28.865c-.853 0-1.692.854-1.692 1.693 0 .839.839 1.28 1.693 1.28 5.55 0 9.82 4.667 9.82 9.76 0 .854-.427 1.266-1.28 1.266H5.181c-.427 0-1.281-.412-1.281-1.266 0-5.093 4.681-9.76 9.805-9.76.854 0 1.708-.426 1.708-1.28 0-.854-.854-1.693-1.708-1.693C6.89 33.525.912 39.472.912 46.258c0 2.547 2.135 4.666 4.27 4.666h37.1c2.547 0 4.254-2.12 4.254-4.666 0-6.786-5.535-12.733-12.793-12.733ZM23.939 9.753c4.696 0 8.524 4.666 8.524 11.04 0 6.374-3.828 11.04-8.524 11.04-5.108 0-8.951-4.681-8.951-11.04 0-6.359 3.842-11.04 8.95-11.04Zm0 25.465c6.404 0 11.513-6.359 11.513-14.425 0-8.067-5.109-14.426-11.513-14.426-3.416 0-6.39 1.693-8.524 4.24-2.135 2.973-3.416 6.358-3.416 10.186 0 8.066 5.124 14.425 11.94 14.425Z" clip-rule="evenodd" />
 		</symbol>
+		<symbol fill="none" viewBox="0 0 106 106" id="icon-play" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#fa)">
+				<circle cx="52.58" cy="52.58" r="52.58" fill="#fff" fill-opacity=".31" />
+				<circle cx="52.58" cy="52.58" r="52.142" stroke="url(#fb)" stroke-width=".876" />
+			</g>
+			<path fill="#fff" d="M72.296 54.58a2.802 2.802 0 0 1-1.353 2.405L45.296 72.674a2.85 2.85 0 0 1-3.94-.98 2.823 2.823 0 0 1-.39-1.427V38.892a2.823 2.823 0 0 1 1.446-2.46 2.848 2.848 0 0 1 2.884.054l25.647 15.689a2.802 2.802 0 0 1 1.353 2.405Z" />
+			<defs>
+				<linearGradient id="fb" x1="2.009" x2="107.61" y1="10.516" y2="16.594" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#fff" />
+					<stop offset="1" stop-color="#fff" stop-opacity=".43" />
+				</linearGradient>
+				<filter id="fa" width="122.687" height="122.687" x="-8.763" y="-8.763" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feGaussianBlur in="BackgroundImageFix" stdDeviation="4.382" />
+					<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_518_19811" />
+					<feBlend in="SourceGraphic" in2="effect1_backgroundBlur_518_19811" result="shape" />
+				</filter>
+			</defs>
+		</symbol>
+		<symbol fill="none" viewBox="0 0 106 106" id="icon-play2" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#ga)">
+				<circle cx="52.58" cy="52.58" r="52.58" fill="#fff" fill-opacity=".31" />
+				<circle cx="52.58" cy="52.58" r="52.142" stroke="url(#gb)" stroke-width=".876" />
+			</g>
+			<path d="M72.296 54.58a2.802 2.802 0 0 1-1.353 2.405L45.296 72.674a2.85 2.85 0 0 1-3.94-.98 2.823 2.823 0 0 1-.39-1.427V38.892a2.823 2.823 0 0 1 1.446-2.46 2.848 2.848 0 0 1 2.884.054l25.647 15.689a2.802 2.802 0 0 1 1.353 2.405Z" fill="#fff" />
+			<defs>
+				<linearGradient id="gb" x1="2.009" y1="10.516" x2="107.61" y2="16.594" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#fff" />
+					<stop offset="1" stop-color="#fff" stop-opacity=".43" />
+				</linearGradient>
+				<filter id="ga" x="-8.763" y="-8.763" width="122.687" height="122.687" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feGaussianBlur in="BackgroundImageFix" stdDeviation="4.382" />
+					<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_518_19811" />
+					<feBlend in="SourceGraphic" in2="effect1_backgroundBlur_518_19811" result="shape" />
+				</filter>
+			</defs>
+		</symbol>
 	</svg>
-	<script src="js/app.js?v=20240730150604"></script>
+	<script src="js/app.js?v=20240731024232"></script>
 
 </body>
 
