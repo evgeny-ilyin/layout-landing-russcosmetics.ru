@@ -9,6 +9,8 @@
 // 2. Vendors
 @import "vendors/normalize";
 @import "vendors/reset";
+@import "~@fancyapps/ui/dist/fancybox/fancybox";
+@import "~@fancyapps/ui/dist/carousel/carousel";
 
 // 3. Base stuff
 @import "base/base";
