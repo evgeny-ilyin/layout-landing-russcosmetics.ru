@@ -5,18 +5,18 @@
 	@@include('html/layout/header.html', {})
 
 	<main class="container flex-1">
+		<div class="content content_wide bg-gray">
+			@@include('html/layout/banner-main.html', {})
+		</div>
 		<div class="content">
-			<br><br><br><br><br>
-			Content
-			<br><br><br><br><br>
+			<div class="content__inner">
+				@@include('html/layout/block-1.html', {})
+				@@include('html/layout/block-2.html', {})
+				@@include('html/layout/cards.html', {})
+				@@include('html/layout/block-3.html', {})
+			</div>
 		</div>
 	</main>
-
-	@@include('html/layout/footer.html', {
-		"year_from": 2020,
-		"year_to": 2023,
-	})
-
 	@@include('html/components/cookies.html', {})
 	@@include('html/components/svg-sprite.html', {})
 	@@include('html/components/scripts.html', {})
