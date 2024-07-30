@@ -2,40 +2,21 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
-	border-bottom: 1px solid gray;
-
 	// .header__wrapper
 	&__wrapper {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		position: relative;
-		padding: 10px 0;
-		gap: 0 5px;
+		justify-content: center;
+		padding: 20px 0;
+
+		@include resp-from(md) {
+			padding: 48px 0;
+		}
 	}
 
 	// .header__logo
 	&__logo {
-		margin: 10px 0;
-
-		@include resp-from(md) {
-			margin: 0;
-		}
-
 		a {
 			display: flex;
-			color: $black;
-		}
-
-		svg {
-			fill: currentColor;
-			width: 261px;
-			height: 65px;
-
-			@include resp-from(lg) {
-				transition: width 0s;
-			}
 		}
 	}
 

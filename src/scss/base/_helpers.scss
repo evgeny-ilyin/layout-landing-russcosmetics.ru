@@ -132,13 +132,13 @@
 
 	&.scroll-x {
 		overflow-x: auto;
-		
+
 		&::-webkit-scrollbar-track {
 			border-bottom: 2px solid $gray;
 		}
-	
+
 		&::-webkit-scrollbar-thumb {
-			border-bottom: 7px solid $red;
+			border-bottom: 7px solid $black;
 		}
 	}
 
@@ -148,9 +148,9 @@
 		&::-webkit-scrollbar-track {
 			border-right: 2px solid $gray;
 		}
-	
+
 		&::-webkit-scrollbar-thumb {
-			border-right: 6px solid $red;
+			border-right: 6px solid $black;
 		}
 	}
 
@@ -183,7 +183,7 @@
 
 	&::-webkit-scrollbar-thumb:hover,
 	&::-webkit-scrollbar-thumb:active {
-		border-color: $red-modern;
+		border-color: $black;
 	}
 }
 

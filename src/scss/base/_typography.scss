@@ -37,7 +37,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	font-family: $family-headers;
+	font-family: $family-alternate;
 }
 
 h1,
@@ -136,8 +136,12 @@ ol {
 	color: $white !important;
 }
 
+.text-green {
+	color: $green;
+}
+
 .error {
-	color: $red;
+	color: $error;
 }
 
 /**
