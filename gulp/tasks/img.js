@@ -17,7 +17,7 @@ export const img = () => {
 
 			// создать webp
 			.pipe(app.plugins.newer(app.path.build.img))
-			.pipe(webp({ quality: 70 }))
+			.pipe(webp({ quality: 80 }))
 			.pipe(app.gulp.dest(app.path.build.img))
 
 			// перенести все картинки без оптимизации (dev), чтобы работал лайтбокс Fancybox по ссылке на картинку (без замены на picture и webp)
@@ -52,10 +52,6 @@ export const img = () => {
 			// 	)
 			// )
 			// .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.img))
-
-			// svg просто перенести из src в build
-			.pipe(app.gulp.src(app.path.src.svg, { encoding: false }))
-			.pipe(app.gulp.dest(app.path.build.img))
 
 			.pipe(app.plugins.browsersync.stream())
 	);
