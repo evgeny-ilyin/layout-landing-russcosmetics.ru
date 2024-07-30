@@ -1,5 +1,8 @@
 @import "abstracts/root-vars-map";
 
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
 :root {
 	@each $name, $color in $colors {
 		--#{$name}: #{$color};
@@ -7,5 +10,11 @@
 
 	@each $name, $svg in $svgs {
 		--#{$name}: #{$svg};
+	}
+
+	--block-margin-top: 40px;
+
+	@include resp-from(lg) {
+		--block-margin-top: 90px;
 	}
 }
