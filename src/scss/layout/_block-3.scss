@@ -1,0 +1,155 @@
+.block-3 {
+	margin-top: var(--block-margin-top);
+
+	// .block-3__banner
+	&__banner {
+		img {
+			border-radius: 20px;
+		}
+	}
+
+	// .block-3__eco
+	&__eco {
+		margin-top: var(--block-margin-top);
+	}
+
+	// .block-3__eco-header
+	&__eco-header {
+		max-width: 630px;
+		font-size: rem(16);
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0 auto;
+
+		@include resp-from(lg) {
+			font-size: rem(24);
+			max-width: 880px;
+		}
+
+		b,
+		strong {
+			font-size: rem(28);
+			font-weight: 700;
+
+			@include resp-from(lg) {
+				font-size: rem(36);
+			}
+		}
+	}
+
+	// .block-3__eco-logos
+	&__eco-logos {
+		width: 80%;
+		max-width: 1260px;
+		margin: 40px auto 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 40px;
+
+		@include resp-from(lg) {
+			margin-top: 80px;
+		}
+
+		img {
+			width: auto;
+			height: 98px;
+
+			@include resp-from(lg) {
+				height: 196px;
+			}
+		}
+	}
+
+	// .block-3__certs
+	&__certs {
+		margin-top: var(--block-margin-top);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	// .block-3__cert-item
+	&__cert-item {
+		flex: 1 1 250px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background: $gray-blue;
+		padding: 30px;
+		border-radius: 20px;
+		border: 1px solid $stroke-2;
+
+		@include resp-from(lg) {
+			border-radius: 50px 50px 20px 20px;
+		}
+
+		img {
+			width: auto;
+
+			@include resp-from(lg) {
+				height: 471px;
+			}
+		}
+	}
+
+	// .block-3__buy
+	&__buy {
+		margin-top: var(--block-margin-top);
+	}
+
+	// .block-3__buy-header
+	&__buy-header {
+		font-size: rem(32);
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 35px;
+		text-transform: uppercase;
+
+		@include resp-from(lg) {
+			font-size: rem(40);
+		}
+	}
+
+	.f-carousel {
+		--f-carousel-spacing: 18px;
+	}
+
+	.f-carousel__slide {
+		width: 40%;
+		height: 40px;
+		padding: 0 20px;
+		border-radius: 44px;
+		background: $gray;
+		display: flex;
+		align-items: center;
+
+		@include resp-from(xm) {
+			width: 35%;
+			height: 60px;
+			padding: 0 30px;
+		}
+
+		@include resp-from(md) {
+			width: 25%;
+			height: 75px;
+			padding: 0 20px;
+		}
+
+		@include resp-from(lg) {
+			width: calc(25% - 14px);
+			height: 88px;
+			padding: 0 44px;
+		}
+
+		@include resp-from(xl) {
+			width: calc(20% - 15px);
+		}
+
+		img {
+			width: auto;
+		}
+	}
+}

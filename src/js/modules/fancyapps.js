@@ -22,4 +22,14 @@ addEventListener("DOMContentLoaded", () => {
 		Navigation: true,
 		Dots: false,
 	});
+
+	let carouselBuy = document.getElementById("carouselBuy");
+	new Carousel(carouselBuy, {
+		l10n: ru,
+		slidesPerPage: 1,
+		infinite: true,
+		Navigation: false,
+		Dots: false,
+		center: false,
+	});
 });
