@@ -13,3 +13,5 @@ addEventListener("DOMContentLoaded", () => {
 });
 
 // import "./modules/cookies.js";
+import "./modules/fancyapps.js";
+
