@@ -36,7 +36,18 @@
 		padding-right: $max-padding;
 	}
 
-	// &_wide {
-	// 	max-width: 100%;
-	// }
+	// .content__inner
+	&__inner {
+		max-width: $max-width-inner;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	// .content_wide
+	&_wide {
+		max-width: 100%;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
 }

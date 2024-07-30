@@ -18,6 +18,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	padding-bottom: 150px;
 	// scrollbar-gutter: stable;
 	// sticky для сайдбара не работает, если для html стоит overflow-x: hidden; (выше), нужен clip (ниже), но тогда возникают проблемы у body.noscroll
 	// overflow-x: hidden;
@@ -45,21 +46,21 @@ body {
  * Selections
  */
 ::-moz-selection {
-	background: $gray;
+	background: $mint;
 	color: $black;
 }
 
 ::selection {
-	background: $gray;
+	background: $mint;
 	color: $black;
 }
 
 img::-moz-selection {
-	background: rgba($gray, 0.5);
+	background: rgba($mintHEX, 0.5);
 	color: transparent;
 }
 img::selection {
-	background: rgba($gray, 0.5);
+	background: rgba($mintHEX, 0.5);
 	color: transparent;
 }
 

@@ -5,11 +5,11 @@
 //** Fonts
 /// Headers font family
 /// @type List
-$family-headers: "TT Firs Neue", "Roboto", "Helvetica", "Open Sans", "Arial", sans-serif !default;
+$family-alternate: "Urbanist", "Roboto", "Helvetica", "Open Sans", "Arial", sans-serif !default;
 
 /// Regular font family
 /// @type List
-$family-text: "Roboto", "Helvetica", "Open Sans", "Arial", sans-serif !default;
+$family-text: "Montserrat", "Helvetica", "Open Sans", "Arial", sans-serif !default;
 
 /// Monospace font family
 /// @type List
@@ -24,26 +24,35 @@ $browser-context: 16;
 /// Simple colors
 /// @type Color
 $black: var(--black);
+$black-real: var(--black-real);
 $black30: var(--black30);
 $black60: var(--black60);
-$black70: var(--black70);
 $white: var(--white);
 $gray: var(--gray);
-$blue60: var(--blue60);
-$red: var(--red);
-$red-modern: var(--red-modern);
+$gray-dark: var(--gray-dark);
+$gray-blue: var(--gray-blue);
+$light-blue: var(--light-blue);
+$cyan: var(--cyan);
+$green: var(--green);
+$mint: var(--mint);
+$stroke-1: var(--stroke-1);
+$stroke-2: var(--stroke-2);
+
+$error: $green;
+
+$mintHEX: #b7dbbd;
 
 /// Main brand color
 /// @type Color
-$brand-color-primary: #05486e !default;
-$brand-color-primary-lighten: lighten($brand-color-primary, 30%);
-$brand-color-primary-darken: darken($brand-color-primary, 10%);
+$brand-color-primary: $green !default;
+// $brand-color-primary-lighten: lighten($brand-color-primary, 30%);
+// $brand-color-primary-darken: darken($brand-color-primary, 10%);
 
-$brand-color-secondary: #00748b !default;
-$brand-color-secondary-lighten: lighten($brand-color-secondary, 20%);
-$brand-color-secondary-darken: darken($brand-color-secondary, 10%);
+// $brand-color-secondary: #00748b !default;
+// $brand-color-secondary-lighten: lighten($brand-color-secondary, 20%);
+// $brand-color-secondary-darken: darken($brand-color-secondary, 10%);
 
-$brand-color-accent: #e35833 !default;
+// $brand-color-accent: #e35833 !default;
 
 /// Text color
 /// @type Color
@@ -57,16 +66,18 @@ $placeholder-color: $black30;
 $input-color: $black;
 
 //** SVGs --var
-$svg-fetch-ring: var(--svg-fetch-ring);
-$svg-arrow-long: var(--svg-arrow-long);
-$svg-arrow-black: var(--svg-arrow-black);
-$svg-arrow-white: var(--svg-arrow-white);
-$svg-angle: var(--svg-angle);
-$svg-close: var(--svg-close);
-$svg-nav-search: var(--svg-nav-search);
-$svg-geo: var(--svg-geo);
-$svg-checked: var(--svg-checked);
-$svg-download: var(--svg-download);
+// $svg-fetch-ring: var(--svg-fetch-ring);
+// $svg-arrow-long: var(--svg-arrow-long);
+// $svg-arrow-black: var(--svg-arrow-black);
+// $svg-arrow-white: var(--svg-arrow-white);
+// $svg-angle: var(--svg-angle);
+// $svg-close: var(--svg-close);
+// $svg-nav-search: var(--svg-nav-search);
+// $svg-geo: var(--svg-geo);
+// $svg-checked: var(--svg-checked);
+$svg-star: var(--star);
+$svg-drop: var(--drop);
+$svg-arrow-long: var(--arrow-long);
 
 /// Transitions
 $transition-default: 250ms ease-in-out;
@@ -74,7 +85,8 @@ $transition-default: 250ms ease-in-out;
 /// Container's maximum width + paddings
 /// @type Length
 $min-width: 320px !default;
-$max-width: 1440px !default;
+$max-width: 1920px !default;
+$max-width-inner: 1600px !default;
 $min-padding: 15px !default;
 $max-padding: 30px !default;
 
