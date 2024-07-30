@@ -1,9 +1,5 @@
 .cards {
-	margin-top: 45px;
-
-	@include resp-from(lg) {
-		margin-top: 90px;
-	}
+	margin-top: var(--block-margin-top);
 
 	// .cards__h
 	&__h {
@@ -27,7 +23,7 @@
 
 		@include resp-from(md) {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
+			// grid-template-columns: 1fr 1fr 1fr;
 			grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 			// margin-bottom: 50px;
 		}
@@ -60,14 +56,6 @@
 	transition: all $transition-default;
 	text-decoration: none;
 
-	@include resp-from(md) {
-		padding: 30px 16px;
-	}
-
-	@include resp-from(lg) {
-		padding: 30px;
-	}
-
 	&.is-opened {
 		background: $green;
 		color: $white;
@@ -78,10 +66,6 @@
 			}
 		}
 	}
-
-	// @include on-hover {
-	// 	@extend .is-opened;
-	// }
 
 	@media (hover: hover) {
 		/* when hover is supported */
@@ -111,12 +95,35 @@
 		}
 	}
 
+	@include resp-from(md) {
+		padding: 30px 16px;
+	}
+
 	@include resp-from(lg) {
 		padding: 40px;
 	}
 
 	@include resp-from(hd) {
 		padding: 50px;
+	}
+
+	&_bgr {
+		position: relative;
+		padding: 0;
+		justify-content: center;
+
+		picture,
+		img {
+			border-radius: 20px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		svg {
+			position: absolute;
+			width: 105px;
+		}
 	}
 
 	// .card__image
@@ -417,9 +424,13 @@
 
 	// .card-data__item
 	&__item {
-		padding: 34px;
+		padding: 16px;
 		border-radius: 20px;
 		background: $gray-blue;
+
+		@include resp-from(sm) {
+			padding: 34px;
+		}
 	}
 }
 
