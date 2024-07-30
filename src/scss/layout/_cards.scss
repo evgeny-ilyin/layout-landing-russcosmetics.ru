@@ -267,15 +267,13 @@
 	&__images {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		min-width: 350px;
 		padding: 0 30px;
 
 		@include resp-from(sm) {
+			min-width: 390px;
 			padding: 0;
-		}
-
-		@include resp-from(lg) {
-			min-width: 500px;
 		}
 
 		img {
@@ -355,6 +353,10 @@
 				background: $svg-star 0 0 no-repeat;
 			}
 		}
+
+		&._vertical {
+			flex-direction: column;
+		}
 	}
 
 	// .card-data__bottom
@@ -427,7 +429,6 @@
 		font-size: rem(20);
 		font-weight: 600;
 		text-transform: uppercase;
-		margin-bottom: 30px;
 
 		@include resp-from(lg) {
 			font-size: rem(24);
@@ -441,6 +442,10 @@
 		border-radius: 12px;
 		padding: 23px;
 		margin-bottom: 8px;
+
+		&:nth-child(2) {
+			margin-top: 30px;
+		}
 
 		@include resp-from(md) {
 			display: flex;
