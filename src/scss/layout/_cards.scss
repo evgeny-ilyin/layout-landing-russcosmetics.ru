@@ -108,9 +108,10 @@
 		padding: 50px;
 	}
 
+	// .card_bgr
 	&_bgr {
 		position: relative;
-		padding: 0;
+		padding: 0 !important;
 		justify-content: center;
 
 		picture,
