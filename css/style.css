@@ -3290,7 +3290,7 @@ ol {
 }
 .card_bgr {
   position: relative;
-  padding: 0;
+  padding: 0!important;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center
