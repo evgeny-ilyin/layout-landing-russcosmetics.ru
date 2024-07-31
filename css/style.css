@@ -2969,7 +2969,7 @@ ol {
 .drop-static-1 {
   opacity: 1;
   top: 100px;
-  left: -250px;
+  left: -200px;
   width: 290px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
@@ -2978,12 +2978,13 @@ ol {
 .drop-static-2 {
   opacity: 1;
   top: 1000px;
-  right: -330px
+  right: -150px;
+  width: 300px
 }
 .drop-static-3 {
   opacity: 1;
   bottom: 4200px;
-  left: -230px;
+  left: -130px;
   width: 250px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
@@ -3001,18 +3002,18 @@ ol {
 .drop-static-5 {
   opacity: 1;
   bottom: 1950px;
-  left: -230px;
+  left: -500px;
   width: 260px
 }
 .drop-static-6 {
   opacity: 1;
   bottom: 1000px;
-  left: -290px
+  left: -190px
 }
 .drop-static-7 {
   opacity: 1;
   bottom: 100px;
-  right: -280px;
+  right: -200px;
   width: 300px
 }
 .drop-1 {
@@ -3041,7 +3042,7 @@ ol {
   --delay: 3s;
   width: 30px;
   top: 580px;
-  right: -60px;
+  right: 20px;
   -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
   animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
@@ -3051,7 +3052,7 @@ ol {
   --delay: 2s;
   width: 35px;
   top: 1200px;
-  left: -30px;
+  left: 10px;
   -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
   animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
@@ -3059,9 +3060,9 @@ ol {
   --distance: 1200px;
   --duration: 10s;
   --delay: 3s;
-  width: 35px;
+  width: 45px;
   top: 2600px;
-  right: -70px;
+  right: 60px;
   -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
   animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
@@ -3069,9 +3070,9 @@ ol {
   --distance: 1000px;
   --duration: 12s;
   --delay: 2s;
-  width: 20px;
+  width: 40px;
   top: 2660px;
-  right: -100px;
+  right: 10px;
   -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
   animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
@@ -3081,7 +3082,7 @@ ol {
   --delay: 5s;
   width: 35px;
   top: 2000px;
-  left: -70px;
+  left: 50px;
   -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
   animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
@@ -3089,9 +3090,9 @@ ol {
   --distance: 1200px;
   --duration: 12s;
   --delay: 2s;
-  width: 30px;
+  width: 40px;
   top: 3500px;
-  left: -80px;
+  left: 20px;
   -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
   animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
@@ -4244,6 +4245,25 @@ input[type=checkbox]:disabled {
     padding-left: 30px;
     padding-right: 30px
   }
+  .drop-static-1 {
+    left: -250px
+  }
+  .drop-static-2 {
+    width: auto;
+    right: -330px
+  }
+  .drop-static-3 {
+    left: -230px
+  }
+  .drop-static-5 {
+    left: -230px
+  }
+  .drop-static-6 {
+    left: -290px
+  }
+  .drop-static-7 {
+    right: -280px
+  }
   .drop-1 {
     width: auto
   }
@@ -4252,22 +4272,28 @@ input[type=checkbox]:disabled {
     right: 37%
   }
   .drop-3 {
-    width: auto
+    width: auto;
+    right: -60px
   }
   .drop-4 {
-    width: auto
+    width: auto;
+    left: -30px
   }
   .drop-5 {
-    width: auto
+    width: auto;
+    right: -70px
   }
   .drop-6 {
-    width: 35px
+    width: 35px;
+    right: -100px
   }
   .drop-7 {
-    width: auto
+    width: auto;
+    left: -70px
   }
   .drop-8 {
-    width: auto
+    width: auto;
+    left: -80px
   }
   .slide__descr div {
     max-width: 80%
