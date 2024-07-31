@@ -12,23 +12,37 @@
 .drop-static-1 {
 	opacity: 1;
 	top: 100px;
-	left: -250px;
+	left: -200px;
 	width: 290px;
 	transform: rotate(150deg);
+
+	@include resp-from(xl) {
+		left: -250px;
+	}
 }
 
 .drop-static-2 {
 	opacity: 1;
 	top: 1000px;
-	right: -330px;
+	right: -150px;
+	width: 300px;
+
+	@include resp-from(xl) {
+		width: auto;
+		right: -330px;
+	}
 }
 
 .drop-static-3 {
 	opacity: 1;
 	bottom: 4200px;
-	left: -230px;
+	left: -130px;
 	width: 250px;
 	transform: rotate(150deg);
+
+	@include resp-from(xl) {
+		left: -230px;
+	}
 }
 
 .drop-static-4 {
@@ -42,21 +56,33 @@
 .drop-static-5 {
 	opacity: 1;
 	bottom: 1950px;
-	left: -230px;
+	left: -500px;
 	width: 260px;
+
+	@include resp-from(xl) {
+		left: -230px;
+	}
 }
 
 .drop-static-6 {
 	opacity: 1;
 	bottom: 1000px;
-	left: -290px;
+	left: -190px;
+
+	@include resp-from(xl) {
+		left: -290px;
+	}
 }
 
 .drop-static-7 {
 	opacity: 1;
 	bottom: 100px;
-	right: -280px;
+	right: -200px;
 	width: 300px;
+
+	@include resp-from(xl) {
+		right: -280px;
+	}
 }
 
 .drop-1 {
@@ -94,11 +120,12 @@
 	--delay: 3s;
 	width: 30px;
 	top: 580px;
-	right: -60px;
+	right: 20px;
 	animation: slideDown var(--duration) ease-in var(--delay) infinite;
 
 	@include resp-from(xl) {
 		width: auto;
+		right: -60px;
 	}
 }
 
@@ -108,11 +135,12 @@
 	--delay: 2s;
 	width: 35px;
 	top: 1200px;
-	left: -30px;
+	left: 10px;
 	animation: slideDown var(--duration) ease-in var(--delay) infinite;
 
 	@include resp-from(xl) {
 		width: auto;
+		left: -30px;
 	}
 }
 
@@ -120,13 +148,14 @@
 	--distance: 1200px;
 	--duration: 10s;
 	--delay: 3s;
-	width: 35px;
+	width: 45px;
 	top: 2600px;
-	right: -70px;
+	right: 60px;
 	animation: slideDown var(--duration) ease-in var(--delay) infinite;
 
 	@include resp-from(xl) {
 		width: auto;
+		right: -70px;
 	}
 }
 
@@ -134,13 +163,14 @@
 	--distance: 1000px;
 	--duration: 12s;
 	--delay: 2s;
-	width: 20px;
+	width: 40px;
 	top: 2660px;
-	right: -100px;
+	right: 10px;
 	animation: slideDown var(--duration) ease-in var(--delay) infinite;
 
 	@include resp-from(xl) {
 		width: 35px;
+		right: -100px;
 	}
 }
 
@@ -150,11 +180,12 @@
 	--delay: 5s;
 	width: 35px;
 	top: 2000px;
-	left: -70px;
+	left: 50px;
 	animation: slideDown var(--duration) ease-in var(--delay) infinite;
 
 	@include resp-from(xl) {
 		width: auto;
+		left: -70px;
 	}
 }
 
@@ -162,12 +193,13 @@
 	--distance: 1200px;
 	--duration: 12s;
 	--delay: 2s;
-	width: 30px;
+	width: 40px;
 	top: 3500px;
-	left: -80px;
+	left: 20px;
 	animation: slideDown var(--duration) ease-in var(--delay) infinite;
 
 	@include resp-from(xl) {
 		width: auto;
+		left: -80px;
 	}
 }
