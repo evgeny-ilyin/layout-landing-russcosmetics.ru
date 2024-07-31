@@ -210,6 +210,37 @@
 /**
  * Animations
  */
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(0);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	90% {
+		opacity: 0.5;
+	}
+
+	100% {
+		transform: translateY(var(--distance));
+		opacity: 0;
+	}
+}
+
 // .blink {
 // 	animation: fadeEffect 0.8s;
 // }
