@@ -2549,7 +2549,8 @@ svg {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0
+  padding: 0;
+  overflow: hidden
 }
 .container.flex-1 {
   -webkit-box-flex: 1;
@@ -2565,6 +2566,7 @@ svg {
   position: relative
 }
 .content__inner {
+  position: relative;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto
@@ -2813,6 +2815,62 @@ ol {
 .hide-scroll::-webkit-scrollbar {
   display: none
 }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  90% {
+    opacity: .5
+  }
+  100% {
+    -webkit-transform: translateY(var(--distance));
+    transform: translateY(var(--distance));
+    opacity: 0
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  90% {
+    opacity: .5
+  }
+  100% {
+    -webkit-transform: translateY(var(--distance));
+    transform: translateY(var(--distance));
+    opacity: 0
+  }
+}
 .circle {
   border-radius: 50%
 }
@@ -2901,6 +2959,141 @@ ol {
   font-size: clamp(14px,2.5vw,31px);
   font-weight: 500;
   line-height: 1.1
+}
+.drop {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  z-index: 2
+}
+.drop-static-1 {
+  opacity: 1;
+  top: 100px;
+  left: -250px;
+  width: 290px;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg)
+}
+.drop-static-2 {
+  opacity: 1;
+  top: 1000px;
+  right: -330px
+}
+.drop-static-3 {
+  opacity: 1;
+  bottom: 4200px;
+  left: -230px;
+  width: 250px;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg)
+}
+.drop-static-4 {
+  opacity: 1;
+  bottom: 2800px;
+  right: -260px;
+  width: 250px;
+  -webkit-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  transform: rotate(160deg)
+}
+.drop-static-5 {
+  opacity: 1;
+  bottom: 1950px;
+  left: -230px;
+  width: 260px
+}
+.drop-static-6 {
+  opacity: 1;
+  bottom: 1000px;
+  left: -290px
+}
+.drop-static-7 {
+  opacity: 1;
+  bottom: 100px;
+  right: -280px;
+  width: 300px
+}
+.drop-1 {
+  --distance: 600px;
+  --duration: 6s;
+  --delay: 5s;
+  width: 35px;
+  top: 30px;
+  right: 42%;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-2 {
+  --distance: 400px;
+  --duration: 8s;
+  --delay: 1s;
+  width: 30px;
+  top: 150px;
+  right: 27%;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-3 {
+  --distance: 900px;
+  --duration: 10s;
+  --delay: 3s;
+  width: 30px;
+  top: 580px;
+  right: -60px;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-4 {
+  --distance: 1000px;
+  --duration: 12s;
+  --delay: 2s;
+  width: 35px;
+  top: 1200px;
+  left: -30px;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-5 {
+  --distance: 1200px;
+  --duration: 10s;
+  --delay: 3s;
+  width: 35px;
+  top: 2600px;
+  right: -70px;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-6 {
+  --distance: 1000px;
+  --duration: 12s;
+  --delay: 2s;
+  width: 20px;
+  top: 2660px;
+  right: -100px;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-7 {
+  --distance: 1200px;
+  --duration: 10s;
+  --delay: 5s;
+  width: 35px;
+  top: 2000px;
+  left: -70px;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
+}
+.drop-8 {
+  --distance: 1200px;
+  --duration: 12s;
+  --delay: 2s;
+  width: 30px;
+  top: 3500px;
+  left: -80px;
+  -webkit-animation: slideDown var(--duration) ease-in var(--delay) infinite;
+  animation: slideDown var(--duration) ease-in var(--delay) infinite
 }
 .block-1 {
   margin-top: var(--block-margin-top);
@@ -3828,6 +4021,9 @@ input[type=checkbox]:disabled {
   .header__logo a {
     width: auto
   }
+  .drop {
+    display: block
+  }
   .block-2__text {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr
@@ -4047,6 +4243,31 @@ input[type=checkbox]:disabled {
   .content {
     padding-left: 30px;
     padding-right: 30px
+  }
+  .drop-1 {
+    width: auto
+  }
+  .drop-2 {
+    width: auto;
+    right: 37%
+  }
+  .drop-3 {
+    width: auto
+  }
+  .drop-4 {
+    width: auto
+  }
+  .drop-5 {
+    width: auto
+  }
+  .drop-6 {
+    width: 35px
+  }
+  .drop-7 {
+    width: auto
+  }
+  .drop-8 {
+    width: auto
   }
   .slide__descr div {
     max-width: 80%
