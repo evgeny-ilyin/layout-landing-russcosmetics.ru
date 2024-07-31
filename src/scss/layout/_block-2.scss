@@ -5,6 +5,11 @@
 	gap: var(--gap);
 	flex-direction: column;
 
+	// instead of width calc and flex
+	// display: grid;
+	// grid-auto-flow: column;
+	// grid-auto-columns: 2.5fr 2fr;
+
 	@include resp-from(lg) {
 		flex-direction: row;
 	}
