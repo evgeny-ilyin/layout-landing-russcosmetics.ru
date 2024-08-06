@@ -2905,20 +2905,18 @@ ol {
   background: var(--gray-blue)
 }
 .header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 20px 0
 }
-.header__logo a {
+.header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
-  margin: 0 auto
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .header__nav {
   display: -webkit-box;
@@ -2928,6 +2926,20 @@ ol {
   -ms-flex-align: center;
   align-items: center;
   position: relative
+}
+.logo-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%
+}
+.logo-product {
+  margin: 0 auto
+}
+.logo-product img {
+  max-height: 70px;
+  -o-object-fit: contain;
+  object-fit: contain
 }
 .banner-main {
   position: relative;
@@ -3842,6 +3854,11 @@ ol {
 .block-3 .f-carousel__slide {
   width: 40%;
   height: 40px;
+  --img-h: 30px
+}
+.block-3 .f-carousel__slide a {
+  display: block;
+  height: 100%;
   padding: 0 20px;
   border-radius: 44px;
   background: var(--gray);
@@ -3850,10 +3867,15 @@ ol {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .block-3 .f-carousel__slide img {
-  width: auto
+  max-height: var(--img-h);
+  -o-object-fit: contain;
+  object-fit: contain
 }
 .form {
   margin-top: 40px
@@ -4005,10 +4027,13 @@ input[type=checkbox]:disabled {
     left: auto;
     max-width: 30%
   }
+  .block-3 .f-carousel__slide a {
+    padding: 0 30px
+  }
   .block-3 .f-carousel__slide {
     width: 35%;
     height: 60px;
-    padding: 0 30px
+    --img-h: 50px
   }
 }
 @media (min-width:768px) {
@@ -4019,8 +4044,12 @@ input[type=checkbox]:disabled {
   .header__wrapper {
     padding: 48px 0
   }
-  .header__logo a {
-    width: auto
+  .logo-company {
+    width: auto;
+    position: absolute
+  }
+  .logo-product img {
+    max-height: none
   }
   .drop {
     display: block
@@ -4088,10 +4117,13 @@ input[type=checkbox]:disabled {
     flex: 0 0 250px;
     margin-bottom: 0
   }
+  .block-3 .f-carousel__slide a {
+    padding: 0 20px
+  }
   .block-3 .f-carousel__slide {
     width: 25%;
     height: 75px;
-    padding: 0 20px
+    --img-h: 60px
   }
 }
 @media (min-width:1024px) {
@@ -4234,10 +4266,13 @@ input[type=checkbox]:disabled {
   .block-3__buy-header {
     font-size: 2.5rem
   }
+  .block-3 .f-carousel__slide a {
+    padding: 0 44px
+  }
   .block-3 .f-carousel__slide {
     width: calc(25% - 14px);
     height: 88px;
-    padding: 0 44px
+    --img-h: 78px
   }
 }
 @media (min-width:1280px) {

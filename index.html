@@ -8,9 +8,9 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap&v=20240731184439" rel="stylesheet">
-	<link rel="stylesheet" href="css/root-vars.min.css?v=20240731184439">
-	<link rel="stylesheet" href="css/style.min.css?v=20240731184439">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap&v=20240806231936" rel="stylesheet">
+	<link rel="stylesheet" href="css/root-vars.min.css?v=20240806231936">
+	<link rel="stylesheet" href="css/style.min.css?v=20240806231936">
 	<title>Русская косметика — BIOLOGICA</title>
 	<meta name="description" content="Русская косметика">
 </head>
@@ -20,11 +20,16 @@
 		<div class="content">
 			<div class="header__wrapper">
 				<div class="header__logo">
-					<a href="/" aria-label="Главная страница">
+					<a href="/" class="logo-company" aria-label="Главная страница">
 						<picture>
-							<source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" width="251" height="108" alt="" loading="lazy">
+							<source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" width="145" height="63" alt="" loading="lazy">
 						</picture>
 					</a>
+					<div class="logo-product">
+						<picture>
+							<source srcset="img/logo-bio.webp" type="image/webp"><img src="img/logo-bio.png" width="165" height="143" alt="" loading="lazy">
+						</picture>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -229,7 +234,7 @@
 									</div>
 									<div class="slide__footer">
 										<div class="slide__descr">
-											<a href="img/icon-qr.png" data-fancybox aria-label="QR код">
+											<a href="img/qr-code.gif" data-fancybox aria-label="QR код">
 												<picture>
 													<source srcset="img/icon-qr.webp" type="image/webp"><img src="img/icon-qr.png" width="44" height="44" alt="" loading="lazy">
 												</picture>
@@ -435,12 +440,12 @@
 										<div class="item__body">Обволакивает кутикулу волоса, создавая натуральный барьер от негативных факторов окружающей среды. Восстанавливает микробиом (иммунитет) кожи головы.</div>
 									</div>
 									<div class="item__row">
-										<div class="item__title">Протеины пшеницы</div>
-										<div class="item__body">Интенсивно питают, увлажняют и укрепляют волосы</div>
+										<div class="item__title">Соляные кристаллы</div>
+										<div class="item__body">Стимулируют кровообращение и микроциркуляцию, активируют спящие волосяные луковицы и ускоряют рост волос</div>
 									</div>
 									<div class="item__row">
-										<div class="item__title">Люпин белый</div>
-										<div class="item__body">Увеличивает густоту волос</div>
+										<div class="item__title">Ментол</div>
+										<div class="item__body">Охлаждает, устраняет зуд, придаёт прикорневой объём</div>
 									</div>
 								</div>
 							</div>
@@ -599,8 +604,8 @@
 										<div class="item__body">Интенсивно питают, увлажняют и укрепляют волосы</div>
 									</div>
 									<div class="item__row">
-										<div class="item__title">Люпин белый</div>
-										<div class="item__body">Увеличивает густоту волос</div>
+										<div class="item__title">Биотин</div>
+										<div class="item__body">Укрепляет волосяные фолликулы, предотвращает истончение волос</div>
 									</div>
 								</div>
 								<div class="card-data__item item hidden" data-id="card-1-03-2">
@@ -614,8 +619,8 @@
 										<div class="item__body">Интенсивно питают, увлажняют и укрепляют волосы</div>
 									</div>
 									<div class="item__row">
-										<div class="item__title">Люпин белый</div>
-										<div class="item__body">Увеличивает густоту волос</div>
+										<div class="item__title">Биотин</div>
+										<div class="item__body">Укрепляет волосяные фолликулы, предотвращает истончение волос</div>
 									</div>
 								</div>
 								<div class="card-data__item item hidden" data-id="card-1-03-3">
@@ -629,8 +634,8 @@
 										<div class="item__body">Интенсивно питают, увлажняют и укрепляют волосы</div>
 									</div>
 									<div class="item__row">
-										<div class="item__title">Люпин белый</div>
-										<div class="item__body">Увеличивает густоту волос</div>
+										<div class="item__title">Биотин</div>
+										<div class="item__body">Укрепляет волосяные фолликулы, предотвращает истончение волос</div>
 									</div>
 								</div>
 							</div>
@@ -1109,47 +1114,79 @@
 						<div class="block-3__buy-header">Где купить?</div>
 
 						<div class="f-carousel" id="carouselBuy">
+
 							<div class="f-carousel__slide">
-								<picture>
-									<source srcset="img/buy-megamarket.webp" type="image/webp"><img src="img/buy-megamarket.png" width="250" height="33" alt="" loading="lazy">
-								</picture>
+								<a href="https://russcosmetics.ru/brands/biologica/" target="_blank" rel="nofollow" aria-label="Купить на сайте Русская косметика">
+									<picture>
+										<source srcset="img/buy-russcosmetics.webp" type="image/webp"><img src="img/buy-russcosmetics.png" width="145" height="63" alt="" loading="lazy">
+									</picture>
+								</a>
 							</div>
 							<div class="f-carousel__slide">
-								<picture>
-									<source srcset="img/buy-yamarket.webp" type="image/webp"><img src="img/buy-yamarket.png" width="250" height="37" alt="" loading="lazy">
-								</picture>
+								<a href="https://www.ozon.ru/seller/russkaya-kosmetika-7543/krasota-i-zdorove-6500/biologica-149970160/?miniapp=seller_7543&opened=brand" target="_blank" rel="nofollow" aria-label="Купить на Озоне">
+									<svg width="250" height="41">
+										<use xlink:href="#buy-ozon"></use>
+									</svg>
+								</a>
 							</div>
 							<div class="f-carousel__slide">
-								<svg width="250" height="25">
-									<use xlink:href="#buy-wb"></use>
-								</svg>
+								<a href="https://www.wildberries.ru/seller/10393?sort=popular&page=1&fbrand=32655" target="_blank" rel="nofollow" aria-label="Купить на Вайлдберрис">
+									<svg width="250" height="25">
+										<use xlink:href="#buy-wb"></use>
+									</svg>
+								</a>
 							</div>
 							<div class="f-carousel__slide">
-								<svg width="250" height="41">
-									<use xlink:href="#buy-ozon"></use>
-								</svg>
+								<a href="https://goldapple.ru/brands/biologica" target="_blank" rel="nofollow" aria-label="Купить в Золотом яблоке">
+									<picture>
+										<source srcset="img/buy-goldapple.webp" type="image/webp"><img src="img/buy-goldapple.png" width="276" height="57" alt="" loading="lazy">
+									</picture>
+								</a>
+							</div>
+							<div class="f-carousel__slide">
+								<a href="https://market.yandex.ru/catalog--tovary-dlia-krasoty/54438/list?text=Biologica&hid=90509&rs=eJwz8lOy4uJ0yszPyU_PTE4UOPboIbMSCweDACeYZICQGgxZDFUchmZmJkYWpuYNjL2HWbsYmTgYAxirWDmOrW5l2cDI8Jfxw0wLO6eVjFyGXBwcjAKMEowKjAJMUvLJBYnxxRn5BfGZecmlJfHlmSUZ8ckFufHFJal5yZk5CkDTuaTBWhQkeBVYBNikOFNS0xJLc0rijVAkQeYhSRqCJS3AkkJgnQJSismJxaWJOfHJiUX5pcWpOfFFqcUF-XnFmWWp8cWpiUXJGQr_ziVobJ3bDXSgF4eRhXGicaqlYZCRobmRkYWFgaGxsZGlob5lkkWigYGJRZJ5opFFSnJiiklKsqmpSWKasWGqgZmBgb6hviEAUg5OSg%2C%2C&glfilter=7893318%3A16642857" target="_blank" rel="nofollow" aria-label="Купить на Яндекс Маркете">
+									<picture>
+										<source srcset="img/buy-yamarket.webp" type="image/webp"><img src="img/buy-yamarket.png" width="195" height="37" alt="" loading="lazy">
+									</picture>
+								</a>
 							</div>
 
 							<div class="f-carousel__slide">
-								<picture>
-									<source srcset="img/buy-megamarket.webp" type="image/webp"><img src="img/buy-megamarket.png" width="250" height="33" alt="" loading="lazy">
-								</picture>
+								<a href="https://russcosmetics.ru/brands/biologica/" target="_blank" rel="nofollow" aria-label="Купить на сайте Русская косметика">
+									<picture>
+										<source srcset="img/buy-russcosmetics.webp" type="image/webp"><img src="img/buy-russcosmetics.png" width="145" height="63" alt="" loading="lazy">
+									</picture>
+								</a>
 							</div>
 							<div class="f-carousel__slide">
-								<picture>
-									<source srcset="img/buy-yamarket.webp" type="image/webp"><img src="img/buy-yamarket.png" width="250" height="37" alt="" loading="lazy">
-								</picture>
+								<a href="https://www.ozon.ru/seller/russkaya-kosmetika-7543/krasota-i-zdorove-6500/biologica-149970160/?miniapp=seller_7543&opened=brand" target="_blank" rel="nofollow" aria-label="Купить на Озоне">
+									<svg width="250" height="41">
+										<use xlink:href="#buy-ozon"></use>
+									</svg>
+								</a>
 							</div>
 							<div class="f-carousel__slide">
-								<svg width="250" height="25">
-									<use xlink:href="#buy-wb"></use>
-								</svg>
+								<a href="https://www.wildberries.ru/seller/10393?sort=popular&page=1&fbrand=32655" target="_blank" rel="nofollow" aria-label="Купить на Вайлдберрис">
+									<svg width="250" height="25">
+										<use xlink:href="#buy-wb"></use>
+									</svg>
+								</a>
 							</div>
 							<div class="f-carousel__slide">
-								<svg width="250" height="41">
-									<use xlink:href="#buy-ozon"></use>
-								</svg>
+								<a href="https://goldapple.ru/brands/biologica" target="_blank" rel="nofollow" aria-label="Купить в Золотом яблоке">
+									<picture>
+										<source srcset="img/buy-goldapple.webp" type="image/webp"><img src="img/buy-goldapple.png" width="276" height="57" alt="" loading="lazy">
+									</picture>
+								</a>
 							</div>
+							<div class="f-carousel__slide">
+								<a href="https://market.yandex.ru/catalog--tovary-dlia-krasoty/54438/list?text=Biologica&hid=90509&rs=eJwz8lOy4uJ0yszPyU_PTE4UOPboIbMSCweDACeYZICQGgxZDFUchmZmJkYWpuYNjL2HWbsYmTgYAxirWDmOrW5l2cDI8Jfxw0wLO6eVjFyGXBwcjAKMEowKjAJMUvLJBYnxxRn5BfGZecmlJfHlmSUZ8ckFufHFJal5yZk5CkDTuaTBWhQkeBVYBNikOFNS0xJLc0rijVAkQeYhSRqCJS3AkkJgnQJSismJxaWJOfHJiUX5pcWpOfFFqcUF-XnFmWWp8cWpiUXJGQr_ziVobJ3bDXSgF4eRhXGicaqlYZCRobmRkYWFgaGxsZGlob5lkkWigYGJRZJ5opFFSnJiiklKsqmpSWKasWGqgZmBgb6hviEAUg5OSg%2C%2C&glfilter=7893318%3A16642857" target="_blank" rel="nofollow" aria-label="Купить на Яндекс Маркете">
+									<picture>
+										<source srcset="img/buy-yamarket.webp" type="image/webp"><img src="img/buy-yamarket.png" width="195" height="37" alt="" loading="lazy">
+									</picture>
+								</a>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -1225,7 +1262,7 @@
 			</defs>
 		</symbol>
 	</svg>
-	<script src="js/app.min.js?v=20240731184439"></script>
+	<script src="js/app.min.js?v=20240806231936"></script>
 
 </body>
 
