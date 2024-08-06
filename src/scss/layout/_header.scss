@@ -4,8 +4,6 @@
 .header {
 	// .header__wrapper
 	&__wrapper {
-		display: flex;
-		justify-content: center;
 		padding: 20px 0;
 
 		@include resp-from(md) {
@@ -15,15 +13,9 @@
 
 	// .header__logo
 	&__logo {
-		a {
-			display: flex;
-			width: 70%;
-			margin: 0 auto;
-
-			@include resp-from(md) {
-				width: auto;
-			}
-		}
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	// .header__nav
@@ -31,5 +23,28 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+	}
+}
+
+.logo-company {
+	display: flex;
+	width: 70%;
+
+	@include resp-from(md) {
+		width: auto;
+		position: absolute;
+	}
+}
+
+.logo-product {
+	margin: 0 auto;
+
+	img {
+		max-height: 70px;
+		object-fit: contain;
+
+		@include resp-from(md) {
+			max-height: none;
+		}
 	}
 }

@@ -120,28 +120,53 @@
 	.f-carousel__slide {
 		width: 40%;
 		height: 40px;
-		padding: 0 20px;
-		border-radius: 44px;
-		background: $gray;
-		display: flex;
-		align-items: center;
+
+
+		--img-h: 30px;
+
+		a {
+			display: block;
+			height: 100%;
+			padding: 0 20px;
+			border-radius: 44px;
+			background: $gray;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include resp-from(xm) {
+				padding: 0 30px;
+			}
+	
+			@include resp-from(md) {
+				padding: 0 20px;
+			}
+	
+			@include resp-from(lg) {
+				padding: 0 44px;
+			}
+
+		}
 
 		@include resp-from(xm) {
 			width: 35%;
 			height: 60px;
-			padding: 0 30px;
+			// padding: 0 30px;
+			--img-h: 50px;
 		}
 
 		@include resp-from(md) {
 			width: 25%;
 			height: 75px;
-			padding: 0 20px;
+			// padding: 0 20px;
+			--img-h: 60px;
 		}
 
 		@include resp-from(lg) {
 			width: calc(25% - 14px);
 			height: 88px;
-			padding: 0 44px;
+			// padding: 0 44px;
+			--img-h: 78px;
 		}
 
 		@include resp-from(xl) {
@@ -149,7 +174,10 @@
 		}
 
 		img {
-			width: auto;
+			max-height: var(--img-h);
+			object-fit: contain;
+			// margin: 5px 0;
+			// width: auto;
 		}
 	}
 }
