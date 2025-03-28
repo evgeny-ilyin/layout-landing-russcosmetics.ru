@@ -1,7 +1,41 @@
+
 .btn {
-	// .btn_default
-	&_default {
+	font-size: rem(14);
+	font-weight: 500;
+	background: $white;
+	color: $black;
+	padding: 10px 20px;
+	border-radius: 100px;
+	border: 1px solid $stroke-1;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-decoration: none;
+
+	@include resp-from(md) {
+		gap: 10px;
+	}
+
+	@include resp-from(lg) {
+		font-size: rem(16);
+	}
+
+	@include resp-from(fhd) {
+		font-size: rem(18);
+	}
+
+	@include on-event {
+	}
+
+	// .btn_white
+	&_white {
+		background: $white;
+		color: $black;
+		border-color: $green;
+
 		@include on-event {
+			background: $green;
+			color: $white;
 		}
 	}
 }

@@ -1,0 +1,23 @@
+.flying-button {
+	position: fixed;
+	right: 10px;
+	top: 90%;
+	z-index: 2;
+
+	@include resp-from(sm) {
+		right: 20px;
+		top: 50%;
+	}
+
+	@media (hover: hover) {
+		/* when hover is supported */
+		@include on-hover {
+		}
+	}
+
+	@media (hover: none) {
+		/* when hover is not supported */
+		@include on-active {
+		}
+	}
+}
